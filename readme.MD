@@ -75,7 +75,7 @@
 #### Registrar TODO
 
  - Path : "/todos"
- - Metodo : GET
+ - Metodo : POST
  - Input :
 
  ```json
@@ -131,3 +131,11 @@ Path Parameter: "/todos/2"
 
  - DELETE/GET: se envia por un path parameter o query parameter
  - POST: Se puede enviar desde el payload (cuerpo)
+
+ - Conceptos
+     - Usa GET cuando necesitas acceder a un recurso y a información relativa, no necesitas alterar o modificar el estado de esta información obtenida.
+     - Usa POST cuando necesitas enviar cierta información al servidor. Ejemplo: de un formulario para guardar la información del formulario para su uso más adelante.
+     - Usa HEAD cuando necesitas acceder a un recurso y recuperar solo las cabeceras de la respuesta, sin obtener ninguna información del recurso.
+     - Usa PUT cuando necesitas reemplazar el estado de cierta información ya existente en el sistema.
+     - Usa DELETE cuando necesitas borrar un recurso (relativo a la URI que envias) en el sistema.
+     - Usa OPTIONS cuando necesitas saber que tipos de métodos de respuesta soporta el servidor. Se usa para el CORS.
