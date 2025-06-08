@@ -71,3 +71,22 @@
  ```json
     {"id" : 1, "descripcion" : "desc de todo 1"}
  ```
+
+  #### Registrar TODO
+
+ - Path : "/todos"
+ - Metodo : GET
+ - Input :
+
+ ```json
+{
+    "descripcion" : "bla la la"
+}
+ ```
+ - Output :
+
+ ```json
+ {
+    "msg" : ""
+ }
+ ```
