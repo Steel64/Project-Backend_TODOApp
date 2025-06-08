@@ -34,7 +34,7 @@
     - npm run build ===> Construye el servidor web y actualiza si hay cambios.
     - npm run start ===> Ejecuta el servidor web oficialmente.
 
- #### Optimizar comandos
+#### Optimizar comandos
 
  - En package.json, añadir:
 
@@ -60,7 +60,7 @@
  ]
  ```
 
- #### Obtener TODO
+#### Obtener TODO
 
  Por path parameter
  - Path : "/todos"
@@ -72,7 +72,7 @@
     {"id" : 1, "descripcion" : "desc de todo 1"}
  ```
 
-  #### Registrar TODO
+#### Registrar TODO
 
  - Path : "/todos"
  - Metodo : GET
@@ -90,3 +90,44 @@
     "msg" : ""
  }
  ```
+
+#### Modificar TODO
+
+ - Path : "/todos"
+ - Metodo : PUT
+ - Input :
+
+ ```json
+
+Path parameter: /todos/2
+{
+    "descripcion" : "nuevo todo"
+}
+ ```
+
+ - Output :
+
+ ```json
+{
+    "msg" : ""
+}
+ ```
+
+#### Eliminar TODO
+
+ - Path : "/todos"
+ - Metodo : DELETE
+ - Input : 
+
+Path Parameter: "/todos/2"
+
+ - Output :
+
+ ```json
+{
+    "msg" : ""
+}
+ ```
+
+ - DELETE/GET: se envia por un path parameter o query parameter
+ - POST: Se puede enviar desde el payload (cuerpo)
