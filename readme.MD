@@ -30,9 +30,9 @@
     })
 ```
  - Finalmente utilizar los comandos o los comandos optimizados, como:
-    - npm run start:dev ===> Ejecuta servidor web en modo desarrollador (solo para pruebas).
-    - npm run build ===> Construye el servidor web y actualiza si hay cambios.
-    - npm run start ===> Ejecuta el servidor web oficialmente.
+    - npm run start:dev ===> Ejecuta servidor web en modo desarrollador (solo para pruebas) => nodemon ./src/index.ts
+    - npm run build ===> Construye el servidor web y actualiza si hay cambios => npx tsc
+    - npm run start ===> Ejecuta el servidor web oficialmente => node ./dist/index.js
 
  - Instalar cors para evitar cruze de puertos y origines cruzados:
     - npm install cors --save
