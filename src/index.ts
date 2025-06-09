@@ -2,6 +2,7 @@ import express, { Request, Response } from "express"
 import dotenv from "dotenv"
 import { listaTODOs, TODO } from "./data"
 import bodyParser from "body-parser"
+import cors from "cors"
 
 dotenv.config()
 const app = express()
@@ -12,6 +13,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended : true
 }))
+
+app.use(cors()) //configurando cors
 
 app.use(express.static("assets"))
 
@@ -52,6 +55,8 @@ app.get("/todos/:id", (req : Request , resp : Response)=> {
 app.post("/todos", (req : Request, resp : Response)=> {
     const todo = req.body
     const todos = listaTODOs
+
+    console.log(todo)
 
     //validar error de tipo, usar description en vex de descripcion
     if(todo.descripcion == undefined){

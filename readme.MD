@@ -34,6 +34,10 @@
     - npm run build ===> Construye el servidor web y actualiza si hay cambios.
     - npm run start ===> Ejecuta el servidor web oficialmente.
 
+ - Instalar cors para evitar cruze de puertos y origines cruzados:
+    - npm install cors --save
+    - npm install @types/cors --save-dev
+
 #### Optimizar comandos
 
  - En package.json, añadir:
